@@ -10,7 +10,7 @@ score = data['TOEFL Score'].tolist();
 chance = data['Chance of admit'].tolist();
 
 fig = px.scatter(data, x = score, y = chance);
-#fig.show();
+fig.show();
 
 m, c = np.polyfit(score, chance, 1);
 
